@@ -1,0 +1,12 @@
+﻿.name-select{
+    height:20vh;
+    overflow-y:scroll;
+}
+.name-search {
+    height: 20vh;
+    overflow-y: scroll;
+}
+.input-group-addon.my-addon {
+    background-color:WHITE;
+    padding-top: 10px;
+}

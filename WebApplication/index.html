@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Style/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style/bootstrap-duallistbox.min.css" rel="stylesheet" />
+    <link href="Style/billboard.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="Style/style.css" rel="stylesheet" />
+    <script src="Scripts/Utils/jquery-3.2.1.min.js"></script>
+    <script src="Scripts/Utils/bootstrap.min.js"></script>
+    <script src="Scripts/Utils/jquery.bootstrap-duallistbox.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="Scripts/Utils/billboard.min.js"></script>
+    <script src="Scripts/Common.js"></script>
+    <script src="Scripts/Main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="col-xs-6">
+            <div class="input-group">
+                <span class="input-group-addon my-addon">
+                    <input type="checkbox" aria-label="Similar" id="chkMethod">
+                    Search Homonyms:
+                </span>
+
+                <input type="text" class="form-control" aria-label="..." id="namesearch">
+                <input type="button" id="btnSearchNames" value="Search" class="btn btn-default" style="width:100%" />
+            </div>
+            <div class="name-search" id="namesearch">
+                <table class="table table-hover" id="tblSearch">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <table class="table" style="margin-bottom:0"><tr><th style="border-top:0">Selected</th></tr></table>
+            <div class="name-select" id="nameselect">
+                <table class="table table-hover" id="tblSelect">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <select multiple="multiple" size="10" name="states[]"></select>
+        </div>
+        <div class="col-xs-12">
+            <input type="button" class="btn btn-default" value="Submit" id="btnSubmit" style="width:100%; margin-top:5px" />
+        </div>
+        <div class="col-xs-12">
+            <div id="divGraphAbs"></div>
+        </div>
+        <div class="col-xs-12">
+            <div id="divGraphPer"></div>
+        </div>
+    </div>
+
+    
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Style/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style/bootstrap-duallistbox.min.css" rel="stylesheet" />
+    <link href="Style/billboard.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="Style/style.css" rel="stylesheet" />
+    <script src="Scripts/Utils/jquery-3.2.1.min.js"></script>
+    <script src="Scripts/Utils/bootstrap.min.js"></script>
+    <script src="Scripts/Utils/jquery.bootstrap-duallistbox.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="Scripts/Utils/billboard.min.js"></script>
+    <script src="Scripts/Common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="divConsole"></div>
+        <input type="button" onclick="deploy()" value="Deploy" />
+    </div>
+
+    <script>
+        function deploy() {
+            $("divConsole").html("Deploy Running. May take a while")
+            CallWebService("WebService.asmx", "Deploy", {},
+                function (data) {
+                $("divConsole").html("Deploy Complete")
+            },
+                function () {
+                    $("divConsole").html("Error on deploy")
+            }
+        )
+    </script>
+
+
+</body>
+</html>
