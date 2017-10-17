@@ -1,4 +1,4 @@
-#US Census Name History Visualizer
+# US Census Name History Visualizer
 
 ![screenshot](/localhost_50819.png)
 
